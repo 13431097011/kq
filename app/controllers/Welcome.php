@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-include __DIR__."/C.php";
-class Welcome extends C {
+class Welcome extends MY_Controller{
 
 	/**
 	 * Index Page for this controller.
@@ -20,8 +19,10 @@ class Welcome extends C {
 	 */
 	public function index()
 	{
-		
-		
+
+		$this->load->library('mongo_db');
+	    	$book =$this->mongo_db->get('book');
+		var_dump($book);
 		$this->display('index');
 	}
 }

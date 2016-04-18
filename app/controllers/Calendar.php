@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-include __DIR__."/C.php";
-class Calendar extends C {
+class Calendar extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.

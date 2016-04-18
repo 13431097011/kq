@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-include __DIR__."/M.php";
-class Calendar extends M{
+
+class Calendar extends MY_Model{
 	function getall(){
-		$this->db()->
+		
 	}
 }
 

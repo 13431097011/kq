@@ -5,9 +5,8 @@ class Welcome extends MY_Controller
 {
 	public function index()
 	{
-
-
-		$this->display('index');
+		$data = M('book')->all();
+		$this->display('index',['list'=>$data]);
 	}
 
 	public function book()

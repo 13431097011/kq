@@ -54,3 +54,10 @@ function uuid()
 	}
 }
 
+function UI($name,$data){
+	$filename = dirname(dirname(__FILE__))."/UI/".$name.".php";
+	include $filename;
+	$obj = new lists(CI_Controller::get_instance());
+	return $obj->index($data);
+}
+

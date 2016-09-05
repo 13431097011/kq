@@ -6,13 +6,13 @@ class MongoHelper extends CI_Model{
 	{
 		include dirname(dirname(__FILE__))."/libraries/Mongo_db.php";
 		$this->Mongo_db = new Mongo_db();
-		$this->load->database();
+		//$this->load->database();
 	}
 
 
 	public function insert($table,$data)
 	{
-		$_id= $this->Mongo_db->insert($this->db->dbprefix.$table,$data);
+		$_id= $this->Mongo_db->insert($table,$data);
 		if($_id){
 			$data['_id'] = $_id;
 			return $data;
@@ -23,7 +23,7 @@ class MongoHelper extends CI_Model{
 		if(isset($where['_id'])){
 			$where['_id'] = new MongoId($where['_id']);
 		}
-		return	$this->Mongo_db->where($where)->update($this->db->dbprefix.$table,$data);
+		return	$this->Mongo_db->where($where)->update($table,$data);
 	}
 	public function all($table,$where = [], $option = [], $count = false){
 		if (isset($option['field'])&&$option['field']!='*') {
@@ -50,7 +50,7 @@ class MongoHelper extends CI_Model{
 			}
 		}
 
-		$result = $this->Mongo_db->get($this->db->dbprefix.$table);
+		$result = $this->Mongo_db->get($table);
 		
 		if ($count) {
 			return ['count' => $count, 'data' => $result];

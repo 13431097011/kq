@@ -2,326 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41064689-c729-492c-957e-81aa99ff873b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/book.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/book.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/M.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/kq_base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/kq_kq.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/_notes/icon.png.mno" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ad01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ad02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/arrow_m.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/arrow_n.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bg_F.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/bg_M.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/btnn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/btns.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/dialogTitle.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/dialog_tips_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/dian1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/err.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/face.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faceF.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/faceM.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/form_bgt.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico1.1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico1.2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico_approval.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico_arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico_arrow_w.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico_dialog.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico_dialog_cls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico_find.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico_nav.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico_pe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ico_title.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/icon_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/icon_smenu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/input-group.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/li_disc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/lines.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/nav_place.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/ok.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/pe_plan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/pe_plan1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/pe_plan_arrow1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/pe_plan_t1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/pe_t.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/plan_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/plan_s.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/plan_ss.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/s_ad1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/s_ad2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sex_F.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sex_M.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/tab_tit_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/tips1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/tips_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/txt1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/Chart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/Chart.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/docs/00-Getting-Started.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/docs/01-Line-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/docs/02-Bar-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/docs/03-Radar-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/docs/04-Polar-Area-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/docs/05-Pie-Doughnut-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/docs/06-Advanced.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/docs/07-Notes.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/samples/bar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/samples/doughnut.color.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/samples/doughnut.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/samples/line-customTooltips.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/samples/line.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/samples/pie-customTooltips.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/samples/pie.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/samples/polar-area.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/samples/radar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/src/Chart.Bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/src/Chart.Core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/src/Chart.Doughnut.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/src/Chart.Line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/src/Chart.PolarArea.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/Chart/src/Chart.Radar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/cors/jquery.postmessage-transport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/cors/jquery.xdr-transport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/jquery.fileupload-angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/jquery.fileupload-audio.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/jquery.fileupload-image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/jquery.fileupload-jquery-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/jquery.fileupload-process.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/jquery.fileupload-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/jquery.fileupload-validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/jquery.fileupload-video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/jquery.fileupload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/jquery.iframe-transport.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqfileupload/vendor/jquery.ui.widget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jquery-1.11.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jquery.mCustomScrollbar.concat.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/external/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-bg_flat_10_000000_40x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-icons_228ef1_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-icons_ef8c08_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-icons_ffd27a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/images/ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/jquery-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/jquery-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/jquery-ui.structure.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/jquery-ui.structure.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/jquery-ui.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jqui/jquery-ui.theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/jstree/jstree.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/seajs.3.0-debug.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/seajs.3.0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/tagsinput/jquery.tagsinput.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/tagsinput/jquery.tagsinput.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/tagsinput/jquery.tagsinput.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/lang/zh-cn/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/css/ueditor.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/css/ueditor.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/dialogbase.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/anchor.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/arrow_down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/arrow_up.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/button-bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/cancelbutton.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/charts.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/cursor_h.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/cursor_h.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/cursor_v.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/cursor_v.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/dialog-title-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/filescan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/highlighted.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/icons-all.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/icons.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/loaderror.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/lock.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/neweditor-tab-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/pagebreak.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/scale.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/sortable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/sparator_v.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/table-cell-align.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/tangram-colorpicker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/toolbar_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/unhighlighted.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/upload.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/videologo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/word.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/default/images/wordpaste.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/themes/iframe.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/SyntaxHighlighter/shCore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/codemirror/codemirror.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/codemirror/codemirror.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/highcharts-more.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/highcharts-more.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/highcharts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/highcharts.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/annotations.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/annotations.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/canvas-tools.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/data.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/drilldown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/drilldown.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/exporting.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/exporting.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/funnel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/funnel.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/heatmap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/heatmap.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/map.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/themes/dark-blue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/themes/dark-green.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/themes/gray.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/themes/grid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/highcharts/themes/skies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/jquery-1.10.2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/jquery-1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/jquery-1.10.2.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/video-js/font/vjs.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/video-js/font/vjs.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/video-js/font/vjs.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/video-js/font/vjs.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/video-js/video-js.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/video-js/video-js.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/video-js/video-js.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/video-js/video.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/video-js/video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/Uploader.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.flashonly.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.html5only.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/ueditor-config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/ueditor/ueditor-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/brazil.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/brazil.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/date.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/date.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/file.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/file.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/form-test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/formatMoney.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/html5.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/html5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/jquery.form-validator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/jquery.form-validator.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/jsconf.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/jsconf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/lang/de.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/lang/es.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/lang/fr.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/lang/pt.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/lang/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/lang/sv.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/lang/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/location.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/location.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/qunit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/sanitize.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/security.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/security.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/sweden.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/sweden.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/test-data/rectangle100x50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/test-data/square100x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/theme-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/theme-default.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/toggleDisabled.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/toggleDisabled.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/uk.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/base/validator/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/COMM.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/Msg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/TPL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/app.Calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/app.Date.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/app.Form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/app.Loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/app.Page.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/app.Tpl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/app.dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/app.h5Upolad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/fn.replaceVars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/jq.switchPic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/comm/uCheck.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/common.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/arrow1.png" afterPath="$PROJECT_DIR$/public/img/arrow1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/logo.png" afterPath="$PROJECT_DIR$/public/img/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="$PROJECT_DIR$/app/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Welcome.php" afterPath="$PROJECT_DIR$/app/controllers/Welcome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/core/MY_Controller.php" afterPath="$PROJECT_DIR$/app/core/MY_Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/core/MY_Model.php" afterPath="$PROJECT_DIR$/app/core/MY_Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/common_helper.php" afterPath="$PROJECT_DIR$/app/helpers/common_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libraries/Mongo_db.php" afterPath="$PROJECT_DIR$/app/libraries/Mongo_db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.php" afterPath="$PROJECT_DIR$/app/models/user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/default.php" afterPath="$PROJECT_DIR$/app/views/layouts/default.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/menu.php" afterPath="$PROJECT_DIR$/app/views/layouts/menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <ignored path="kq.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -376,8 +57,8 @@
       <file leaf-file-name="book.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/book.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9426">
-              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+            <state relative-caret-position="624">
+              <caret line="343" column="6" selection-start-line="343" selection-start-column="6" selection-end-line="343" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -595,24 +276,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kq" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -679,18 +342,18 @@
       <workItem from="1471514344985" duration="4196000" />
       <workItem from="1471951205984" duration="3009000" />
       <workItem from="1473069179514" duration="2377000" />
-      <workItem from="1473076111418" duration="684000" />
+      <workItem from="1473076111418" duration="942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22936000" />
+    <option name="totallyTimeSpent" value="23194000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1052,8 +715,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/book.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9426">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        <state relative-caret-position="624">
+          <caret line="343" column="6" selection-start-line="343" selection-start-column="6" selection-end-line="343" selection-end-column="6" />
           <folding />
         </state>
       </provider>

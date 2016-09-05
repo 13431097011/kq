@@ -1,0 +1,37 @@
+server {
+        listen       80;
+        server_name  vmkq.oa.com vmbook.oa.com;
+        index index.html index.htm index.php;
+        root  /data/wwwroot/OA/kq/;
+        location ~ .*\.(shtm|shtml)?$ {
+                ssi on;
+                ssi_silent_errors on;
+                ssi_types text/shtml;
+        }
+
+        location ~ .*\.(php|php5)?$
+        {
+                #fastcgi_pass  unix:/dev/shm/php-cgi.sock;
+                fastcgi_pass 127.0.0.1:9000;
+                fastcgi_index index.php;
+                include fcgi.conf;
+        }
+
+        location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|data|js|css|html|htm)$
+        {
+                expires 365d;
+        }
+
+        location / {
+                index index.php;
+                if (-f $request_filename/index.php){
+                        rewrite (.*) $1/index.php;
+                }
+                 if (!-f $request_filename){
+                         rewrite (.*) /index.php;
+                 }
+         }
+
+
+        access_log /usr/local/nginx/logs/access.log;
+}

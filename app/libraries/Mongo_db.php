@@ -656,7 +656,7 @@ class Mongo_db {
 		
 		try
 		{
-			$this->db->{$collection}->insert($insert, array($this->query_safety	 => TRUE));
+			$this->db->{$collection}->insert($insert, array('w' => TRUE));
 			if (isset($insert['_id']))
 			{
 				return ($insert['_id']);
@@ -696,7 +696,7 @@ class Mongo_db {
 		
 		try
 		{
-			$options = array_merge($options, array($this->query_safety => TRUE, 'multiple' => FALSE));
+			$options = array_merge($options, array('w' => TRUE, 'multiple' => true));
 			$this->db->{$collection}->update($this->wheres, array('$set' => $data), $options);
 			$this->_clear();
 			return (TRUE);

@@ -1,157 +1,1284 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$this->load->helper('url');
-?>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>博雅OA系统</title>
-		<link rel="stylesheet" type="text/css" href="/public/css/kq_kq.css?20160106">
-		<link rel="stylesheet" type="text/css" href="/public/js/base/jqui/jquery-ui.min.css?20160106">
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="header">
-				<div class="wrap cl">
-					<div class="logo"><a href="http://vm.oa.com/"></a></div>
-					<ul class="nav">
-						<li><a key="hr" class="on" href="?_a=hr&amp;_m=index">考勤系统<span class="num"><em>1</em><b class="a1"></b><b class="a2"></b></span></a></li>
-						<li><a key="pe" href="?_a=pe&amp;_m=index">绩效与调配系统<span class="num"><em>1</em><b class="a1"></b><b class="a2"></b></span></a></li>
-						<li><a key="pb" href="http://basic.oa.com" target="_blank">人事基础</a></li>
-						<li><a key="zp" href="http://zp.oa.com/" target="_blank">招聘系统</a></li>
-						<li><a key="fi" href="http://fi.oa.com/" target="_blank">财务系统</a></li>
-						<li class="set_menu"><a href="javascript:;" class="sel"><span>更多系统</span><i class="arrow"></i></a>
-							<div class="sel_box">
-								<div class="wrap">
-									<p class="cl edit_box"><a href="javascript:;" class="icon btn_edit">编辑</a></p>
-									<ul class="sel_nav cl " id="view_nav">
-										<li><a key="mb" href="http://meet.oa.com/" target="_blank" class="ico_nav mb" title="会议室预定"></a></li>
-										<li><a key="ks" href="http://kms.oa.com" target="_blank" class="ico_nav ks" title="知识分享"></a></li>
-										<li><a key="tr" href="http://u.oa.com/train/" target="_blank" class="ico_nav tr" title="博雅大讲堂"></a></li>
-										<li><a key="ls" href="http://law.oa.com/" target="_blank" class="ico_nav ls" title="法务系统"></a></li>
-										<li><a key="it" href="http://it.oa.com/" target="_blank" class="ico_nav it" title="IT需求"></a></li>
-										<li class="last"><a key="as" href="http://assets.oa.com/" target="_blank" class="ico_nav as" title="资产管理"></a></li>
-									</ul>
-									<ul class="sel_nav edit_nav cl" id="edit_nav">
-										<li class="ico_nav hr on" draggable="true"><a id="hr" value="1" href="?_a=hr&amp;_m=index" class="ico_nav hr on">考勤系统</a><i></i></li>
-										<li class="ico_nav pe on" draggable="true"><a id="pe" value="1" href="?_a=pe&amp;_m=index" class="ico_nav pe on">绩效与调配系统</a><i></i></li>
-										<li class="ico_nav pb on" draggable="true"><a id="pb" value="1" href="http://basic.oa.com" target="_blank" class="ico_nav pb on">人事基础</a><i></i></li>
-										<li class="ico_nav zp on" draggable="true"><a id="zp" value="1" href="http://zp.oa.com/" target="_blank" class="ico_nav zp on">招聘系统</a><i></i></li>
-										<li class="ico_nav fi on" draggable="true"><a id="fi" value="1" href="http://fi.oa.com/" target="_blank" class="ico_nav fi on">财务系统</a><i></i></li>
-										<li class="ico_nav mb not" draggable="true"><a id="mb" value="0" href="http://meet.oa.com/" target="_blank" class="ico_nav mb">会议室预定</a><i></i></li>
-										<li class="ico_nav ks not" draggable="true"><a id="ks" value="0" href="http://kms.oa.com" target="_blank" class="ico_nav ks">知识分享</a><i></i></li>
-										<li class="ico_nav tr not" draggable="true"><a id="tr" value="0" href="http://u.oa.com/train/" target="_blank" class="ico_nav tr">博雅大讲堂</a><i></i></li>
-										<li class="ico_nav ls not" draggable="true"><a id="ls" value="0" href="http://law.oa.com/" target="_blank" class="ico_nav ls">法务系统</a><i></i></li>
-										<li class="ico_nav it not" draggable="true"><a id="it" value="0" href="http://it.oa.com/" target="_blank" class="ico_nav it">IT需求</a><i></i></li>
-										<li class="ico_nav as not" draggable="true"><a id="as" value="0" href="http://assets.oa.com/" target="_blank" class="ico_nav as">资产管理</a><i></i></li>
-									</ul>
-									<p class="tips">操作提示：1. <b>绿色</b>表示当前在导航栏显示  2.最多选择5个在导航栏显示  3.鼠标拖拽自定义排列顺序</p>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<div class="user_info">
-						<a href="javascript:;" class="face"><span class="g"><em class="b"></em><img width="30" src="http://by.oa.com/data/headpic/1331.jpg" onerror="this.onerror=null;this.src='/static/skin/img/faceM.jpg'" alt=""></span><i class="icon"></i></a>
-						<ul style="display: none;">
-							<li class="line"><a href="http://devpb.oa.com/user/myInfo/1331" target="_blank">个人资料</a></li>
-							<li><a href="api/login.php?cmd=out&amp;id=hr">退出<span class="icon exit"></span></a></li>
-						</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Meta, title, CSS, favicons, etc. -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title><?php echo isset($title)?$title:'后台管理系统';?></title>
+
+	<!-- Bootstrap -->
+	<link href="/public/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="/public/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- iCheck -->
+	<link href="/public/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	<!-- bootstrap-progressbar -->
+	<link href="/public/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+	<!-- jVectorMap -->
+	<link href="/public/css/maps/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+
+	<!-- Custom Theme Style -->
+	<link href="/public/build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+<div class="container body">
+	<div class="main_container">
+		<div class="col-md-3 left_col">
+			<div class="left_col scroll-view">
+				<div class="navbar nav_title" style="border: 0;">
+					<a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<!-- menu profile quick info -->
+				<div class="profile">
+					<div class="profile_pic">
+						<img src="/public/images/img.jpg" alt="..." class="img-circle profile_img">
+					</div>
+					<div class="profile_info">
+						<span>Welcome,</span>
+						<h2>John Doe</h2>
 					</div>
 				</div>
-			</div><!-- header end -->
+				<!-- /menu profile quick info -->
 
-			<div class="mains cl">
-				<?php include __DIR__."/menu.php";?>
-				<div class="right"> 
-					<?php echo $content;?>
+				<br />
+
+				<!-- sidebar menu -->
+				<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+					<div class="menu_section">
+						<h3>General</h3>
+						<ul class="nav side-menu">
+							<li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="index.html">Dashboard</a></li>
+									<li><a href="index2.html">Dashboard2</a></li>
+									<li><a href="index3.html">Dashboard3</a></li>
+								</ul>
+							</li>
+							<li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="form.html">General Form</a></li>
+									<li><a href="form_advanced.html">Advanced Components</a></li>
+									<li><a href="form_validation.html">Form Validation</a></li>
+									<li><a href="form_wizards.html">Form Wizard</a></li>
+									<li><a href="form_upload.html">Form Upload</a></li>
+									<li><a href="form_buttons.html">Form Buttons</a></li>
+								</ul>
+							</li>
+							<li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="general_elements.html">General Elements</a></li>
+									<li><a href="media_gallery.html">Media Gallery</a></li>
+									<li><a href="typography.html">Typography</a></li>
+									<li><a href="icons.html">Icons</a></li>
+									<li><a href="glyphicons.html">Glyphicons</a></li>
+									<li><a href="widgets.html">Widgets</a></li>
+									<li><a href="invoice.html">Invoice</a></li>
+									<li><a href="inbox.html">Inbox</a></li>
+									<li><a href="calendar.html">Calendar</a></li>
+								</ul>
+							</li>
+							<li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="tables.html">Tables</a></li>
+									<li><a href="tables_dynamic.html">Table Dynamic</a></li>
+								</ul>
+							</li>
+							<li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="chartjs.html">Chart JS</a></li>
+									<li><a href="chartjs2.html">Chart JS2</a></li>
+									<li><a href="morisjs.html">Moris JS</a></li>
+									<li><a href="echarts.html">ECharts</a></li>
+									<li><a href="other_charts.html">Other Charts</a></li>
+								</ul>
+							</li>
+							<li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
+									<li><a href="fixed_footer.html">Fixed Footer</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="menu_section">
+						<h3>Live On</h3>
+						<ul class="nav side-menu">
+							<li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="e_commerce.html">E-commerce</a></li>
+									<li><a href="projects.html">Projects</a></li>
+									<li><a href="project_detail.html">Project Detail</a></li>
+									<li><a href="contacts.html">Contacts</a></li>
+									<li><a href="profile.html">Profile</a></li>
+								</ul>
+							</li>
+							<li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="page_403.html">403 Error</a></li>
+									<li><a href="page_404.html">404 Error</a></li>
+									<li><a href="page_500.html">500 Error</a></li>
+									<li><a href="plain_page.html">Plain Page</a></li>
+									<li><a href="login.html">Login Page</a></li>
+									<li><a href="pricing_tables.html">Pricing Tables</a></li>
+								</ul>
+							</li>
+							<li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
+								<ul class="nav child_menu">
+									<li><a href="#level1_1">Level One</a>
+									<li><a>Level One<span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li class="sub_menu"><a href="level2.html">Level Two</a>
+											</li>
+											<li><a href="#level2_1">Level Two</a>
+											</li>
+											<li><a href="#level2_2">Level Two</a>
+											</li>
+										</ul>
+									</li>
+									<li><a href="#level1_2">Level One</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- /sidebar menu -->
+
+				<!-- /menu footer buttons -->
+				<div class="sidebar-footer hidden-small">
+					<a data-toggle="tooltip" data-placement="top" title="Settings">
+						<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+					</a>
+					<a data-toggle="tooltip" data-placement="top" title="FullScreen">
+						<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+					</a>
+					<a data-toggle="tooltip" data-placement="top" title="Lock">
+						<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+					</a>
+					<a data-toggle="tooltip" data-placement="top" title="Logout">
+						<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+					</a>
+				</div>
+				<!-- /menu footer buttons -->
+			</div>
+		</div>
+
+		<!-- top navigation -->
+		<div class="top_nav">
+			<div class="nav_menu">
+				<nav class="" role="navigation">
+					<div class="nav toggle">
+						<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+					</div>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li class="">
+							<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								<img src="/public/images/img.jpg" alt="">John Doe
+								<span class=" fa fa-angle-down"></span>
+							</a>
+							<ul class="dropdown-menu dropdown-usermenu pull-right">
+								<li><a href="javascript:;"> Profile</a></li>
+								<li>
+									<a href="javascript:;">
+										<span class="badge bg-red pull-right">50%</span>
+										<span>Settings</span>
+									</a>
+								</li>
+								<li><a href="javascript:;">Help</a></li>
+								<li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+							</ul>
+						</li>
+
+						<li role="presentation" class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-envelope-o"></i>
+								<span class="badge bg-green">6</span>
+							</a>
+							<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+								<li>
+									<a>
+										<span class="image"><img src="/public/images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+									</a>
+								</li>
+								<li>
+									<a>
+										<span class="image"><img src="/public/images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+									</a>
+								</li>
+								<li>
+									<a>
+										<span class="image"><img src="/public/images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+									</a>
+								</li>
+								<li>
+									<a>
+										<span class="image"><img src="/public/images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+									</a>
+								</li>
+								<li>
+									<div class="text-center">
+										<a>
+											<strong>See All Alerts</strong>
+											<i class="fa fa-angle-right"></i>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- /top navigation -->
+
+		<!-- page content -->
+		<div class="right_col" role="main">
+			<!-- top tiles -->
+			<div class="row tile_count">
+				<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+					<span class="count_top"><i class="fa fa-user"></i> Total Users</span>
+					<div class="count">2500</div>
+					<span class="count_bottom"><i class="green">4% </i> From last Week</span>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+					<span class="count_top"><i class="fa fa-clock-o"></i> Average Time</span>
+					<div class="count">123.50</div>
+					<span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Week</span>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+					<span class="count_top"><i class="fa fa-user"></i> Total Males</span>
+					<div class="count green">2,500</div>
+					<span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+					<span class="count_top"><i class="fa fa-user"></i> Total Females</span>
+					<div class="count">4,567</div>
+					<span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i> From last Week</span>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+					<span class="count_top"><i class="fa fa-user"></i> Total Collections</span>
+					<div class="count">2,315</div>
+					<span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+					<span class="count_top"><i class="fa fa-user"></i> Total Connections</span>
+					<div class="count">7,325</div>
+					<span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
 				</div>
 			</div>
-			<div class="footer">
-				Copyright © 2015-2025 博雅互动 (Boyaa Interactive)
-			</div><!-- footer end -->
+			<!-- /top tiles -->
+
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="dashboard_graph">
+
+						<div class="row x_title">
+							<div class="col-md-6">
+								<h3>Network Activities <small>Graph title sub-title</small></h3>
+							</div>
+							<div class="col-md-6">
+								<div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+									<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+									<span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-9 col-sm-9 col-xs-12">
+							<div id="placeholder33" style="height: 260px; display: none" class="demo-placeholder"></div>
+							<div style="width: 100%;">
+								<div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12 bg-white">
+							<div class="x_title">
+								<h2>Top Campaign Performance</h2>
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="col-md-12 col-sm-12 col-xs-6">
+								<div>
+									<p>Facebook Campaign</p>
+									<div class="">
+										<div class="progress progress_sm" style="width: 76%;">
+											<div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p>Twitter Campaign</p>
+									<div class="">
+										<div class="progress progress_sm" style="width: 76%;">
+											<div class="progress-bar bg-green" role="progressbar" data-transitiongoal="60"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-6">
+								<div>
+									<p>Conventional Media</p>
+									<div class="">
+										<div class="progress progress_sm" style="width: 76%;">
+											<div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40"></div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<p>Bill boards</p>
+									<div class="">
+										<div class="progress progress_sm" style="width: 76%;">
+											<div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+			</div>
+			<br />
+
+			<div class="row">
+
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="x_panel tile fixed_height_320">
+						<div class="x_title">
+							<h2>App Versions</h2>
+							<ul class="nav navbar-right panel_toolbox">
+								<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Settings 1</a>
+										</li>
+										<li><a href="#">Settings 2</a>
+										</li>
+									</ul>
+								</li>
+								<li><a class="close-link"><i class="fa fa-close"></i></a>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+						<div class="x_content">
+							<h4>App Usage across versions</h4>
+							<div class="widget_summary">
+								<div class="w_left w_25">
+									<span>0.1.5.2</span>
+								</div>
+								<div class="w_center w_55">
+									<div class="progress">
+										<div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
+											<span class="sr-only">60% Complete</span>
+										</div>
+									</div>
+								</div>
+								<div class="w_right w_20">
+									<span>123k</span>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="widget_summary">
+								<div class="w_left w_25">
+									<span>0.1.5.3</span>
+								</div>
+								<div class="w_center w_55">
+									<div class="progress">
+										<div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+											<span class="sr-only">60% Complete</span>
+										</div>
+									</div>
+								</div>
+								<div class="w_right w_20">
+									<span>53k</span>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="widget_summary">
+								<div class="w_left w_25">
+									<span>0.1.5.4</span>
+								</div>
+								<div class="w_center w_55">
+									<div class="progress">
+										<div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+											<span class="sr-only">60% Complete</span>
+										</div>
+									</div>
+								</div>
+								<div class="w_right w_20">
+									<span>23k</span>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="widget_summary">
+								<div class="w_left w_25">
+									<span>0.1.5.5</span>
+								</div>
+								<div class="w_center w_55">
+									<div class="progress">
+										<div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+											<span class="sr-only">60% Complete</span>
+										</div>
+									</div>
+								</div>
+								<div class="w_right w_20">
+									<span>3k</span>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="widget_summary">
+								<div class="w_left w_25">
+									<span>0.1.5.6</span>
+								</div>
+								<div class="w_center w_55">
+									<div class="progress">
+										<div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 2%;">
+											<span class="sr-only">60% Complete</span>
+										</div>
+									</div>
+								</div>
+								<div class="w_right w_20">
+									<span>1k</span>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="x_panel tile fixed_height_320 overflow_hidden">
+						<div class="x_title">
+							<h2>Device Usage</h2>
+							<ul class="nav navbar-right panel_toolbox">
+								<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Settings 1</a>
+										</li>
+										<li><a href="#">Settings 2</a>
+										</li>
+									</ul>
+								</li>
+								<li><a class="close-link"><i class="fa fa-close"></i></a>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+						<div class="x_content">
+							<table class="" style="width:100%">
+								<tr>
+									<th style="width:37%;">
+										<p>Top 5</p>
+									</th>
+									<th>
+										<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+											<p class="">Device</p>
+										</div>
+										<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+											<p class="">Progress</p>
+										</div>
+									</th>
+								</tr>
+								<tr>
+									<td>
+										<canvas id="canvas1" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+									</td>
+									<td>
+										<table class="tile_info">
+											<tr>
+												<td>
+													<p><i class="fa fa-square blue"></i>IOS </p>
+												</td>
+												<td>30%</td>
+											</tr>
+											<tr>
+												<td>
+													<p><i class="fa fa-square green"></i>Android </p>
+												</td>
+												<td>10%</td>
+											</tr>
+											<tr>
+												<td>
+													<p><i class="fa fa-square purple"></i>Blackberry </p>
+												</td>
+												<td>20%</td>
+											</tr>
+											<tr>
+												<td>
+													<p><i class="fa fa-square aero"></i>Symbian </p>
+												</td>
+												<td>15%</td>
+											</tr>
+											<tr>
+												<td>
+													<p><i class="fa fa-square red"></i>Others </p>
+												</td>
+												<td>30%</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="x_panel tile fixed_height_320">
+						<div class="x_title">
+							<h2>Quick Settings</h2>
+							<ul class="nav navbar-right panel_toolbox">
+								<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Settings 1</a>
+										</li>
+										<li><a href="#">Settings 2</a>
+										</li>
+									</ul>
+								</li>
+								<li><a class="close-link"><i class="fa fa-close"></i></a>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+						<div class="x_content">
+							<div class="dashboard-widget-content">
+								<ul class="quick-list">
+									<li><i class="fa fa-calendar-o"></i><a href="#">Settings</a>
+									</li>
+									<li><i class="fa fa-bars"></i><a href="#">Subscription</a>
+									</li>
+									<li><i class="fa fa-bar-chart"></i><a href="#">Auto Renewal</a> </li>
+									<li><i class="fa fa-line-chart"></i><a href="#">Achievements</a>
+									</li>
+									<li><i class="fa fa-bar-chart"></i><a href="#">Auto Renewal</a> </li>
+									<li><i class="fa fa-line-chart"></i><a href="#">Achievements</a>
+									</li>
+									<li><i class="fa fa-area-chart"></i><a href="#">Logout</a>
+									</li>
+								</ul>
+
+								<div class="sidebar-widget">
+									<h4>Profile Completion</h4>
+									<canvas width="150" height="80" id="foo" class="" style="width: 160px; height: 100px;"></canvas>
+									<div class="goal-wrapper">
+										<span class="gauge-value pull-left">$</span>
+										<span id="gauge-text" class="gauge-value pull-left">3,200</span>
+										<span id="goal-text" class="goal-value pull-right">$5,000</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="x_panel">
+						<div class="x_title">
+							<h2>Recent Activities <small>Sessions</small></h2>
+							<ul class="nav navbar-right panel_toolbox">
+								<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Settings 1</a>
+										</li>
+										<li><a href="#">Settings 2</a>
+										</li>
+									</ul>
+								</li>
+								<li><a class="close-link"><i class="fa fa-close"></i></a>
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+						<div class="x_content">
+							<div class="dashboard-widget-content">
+
+								<ul class="list-unstyled timeline widget">
+									<li>
+										<div class="block">
+											<div class="block_content">
+												<h2 class="title">
+													<a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
+												</h2>
+												<div class="byline">
+													<span>13 hours ago</span> by <a>Jane Smith</a>
+												</div>
+												<p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="block">
+											<div class="block_content">
+												<h2 class="title">
+													<a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
+												</h2>
+												<div class="byline">
+													<span>13 hours ago</span> by <a>Jane Smith</a>
+												</div>
+												<p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="block">
+											<div class="block_content">
+												<h2 class="title">
+													<a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
+												</h2>
+												<div class="byline">
+													<span>13 hours ago</span> by <a>Jane Smith</a>
+												</div>
+												<p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="block">
+											<div class="block_content">
+												<h2 class="title">
+													<a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
+												</h2>
+												<div class="byline">
+													<span>13 hours ago</span> by <a>Jane Smith</a>
+												</div>
+												<p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-8 col-sm-8 col-xs-12">
+
+
+
+					<div class="row">
+
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="x_panel">
+								<div class="x_title">
+									<h2>Visitors location <small>geo-presentation</small></h2>
+									<ul class="nav navbar-right panel_toolbox">
+										<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+										</li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#">Settings 1</a>
+												</li>
+												<li><a href="#">Settings 2</a>
+												</li>
+											</ul>
+										</li>
+										<li><a class="close-link"><i class="fa fa-close"></i></a>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content">
+									<div class="dashboard-widget-content">
+										<div class="col-md-4 hidden-small">
+											<h2 class="line_30">125.7k Views from 60 countries</h2>
+
+											<table class="countries_list">
+												<tbody>
+												<tr>
+													<td>United States</td>
+													<td class="fs15 fw700 text-right">33%</td>
+												</tr>
+												<tr>
+													<td>France</td>
+													<td class="fs15 fw700 text-right">27%</td>
+												</tr>
+												<tr>
+													<td>Germany</td>
+													<td class="fs15 fw700 text-right">16%</td>
+												</tr>
+												<tr>
+													<td>Spain</td>
+													<td class="fs15 fw700 text-right">11%</td>
+												</tr>
+												<tr>
+													<td>Britain</td>
+													<td class="fs15 fw700 text-right">10%</td>
+												</tr>
+												</tbody>
+											</table>
+										</div>
+										<div id="world-map-gdp" class="col-md-8 col-sm-12 col-xs-12" style="height:230px;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="row">
+
+
+						<!-- Start to do list -->
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="x_panel">
+								<div class="x_title">
+									<h2>To Do List <small>Sample tasks</small></h2>
+									<ul class="nav navbar-right panel_toolbox">
+										<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+										</li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#">Settings 1</a>
+												</li>
+												<li><a href="#">Settings 2</a>
+												</li>
+											</ul>
+										</li>
+										<li><a class="close-link"><i class="fa fa-close"></i></a>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content">
+
+									<div class="">
+										<ul class="to_do">
+											<li>
+												<p>
+													<input type="checkbox" class="flat"> Schedule meeting with new client </p>
+											</li>
+											<li>
+												<p>
+													<input type="checkbox" class="flat"> Create email address for new intern</p>
+											</li>
+											<li>
+												<p>
+													<input type="checkbox" class="flat"> Have IT fix the network printer</p>
+											</li>
+											<li>
+												<p>
+													<input type="checkbox" class="flat"> Copy backups to offsite location</p>
+											</li>
+											<li>
+												<p>
+													<input type="checkbox" class="flat"> Food truck fixie locavors mcsweeney</p>
+											</li>
+											<li>
+												<p>
+													<input type="checkbox" class="flat"> Food truck fixie locavors mcsweeney</p>
+											</li>
+											<li>
+												<p>
+													<input type="checkbox" class="flat"> Create email address for new intern</p>
+											</li>
+											<li>
+												<p>
+													<input type="checkbox" class="flat"> Have IT fix the network printer</p>
+											</li>
+											<li>
+												<p>
+													<input type="checkbox" class="flat"> Copy backups to offsite location</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End to do list -->
+
+						<!-- start of weather widget -->
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="x_panel">
+								<div class="x_title">
+									<h2>Daily active users <small>Sessions</small></h2>
+									<ul class="nav navbar-right panel_toolbox">
+										<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+										</li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#">Settings 1</a>
+												</li>
+												<li><a href="#">Settings 2</a>
+												</li>
+											</ul>
+										</li>
+										<li><a class="close-link"><i class="fa fa-close"></i></a>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content">
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="temperature"><b>Monday</b>, 07:30 AM
+												<span>F</span>
+												<span><b>C</b></span>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-4">
+											<div class="weather-icon">
+												<canvas height="84" width="84" id="partly-cloudy-day"></canvas>
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<div class="weather-text">
+												<h2>Texas <br><i>Partly Cloudy Day</i></h2>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12">
+										<div class="weather-text pull-right">
+											<h3 class="degrees">23</h3>
+										</div>
+									</div>
+
+									<div class="clearfix"></div>
+
+									<div class="row weather-days">
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Mon</h2>
+												<h3 class="degrees">25</h3>
+												<canvas id="clear-day" width="32" height="32"></canvas>
+												<h5>15 <i>km/h</i></h5>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Tue</h2>
+												<h3 class="degrees">25</h3>
+												<canvas height="32" width="32" id="rain"></canvas>
+												<h5>12 <i>km/h</i></h5>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Wed</h2>
+												<h3 class="degrees">27</h3>
+												<canvas height="32" width="32" id="snow"></canvas>
+												<h5>14 <i>km/h</i></h5>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Thu</h2>
+												<h3 class="degrees">28</h3>
+												<canvas height="32" width="32" id="sleet"></canvas>
+												<h5>15 <i>km/h</i></h5>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Fri</h2>
+												<h3 class="degrees">28</h3>
+												<canvas height="32" width="32" id="wind"></canvas>
+												<h5>11 <i>km/h</i></h5>
+											</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="daily-weather">
+												<h2 class="day">Sat</h2>
+												<h3 class="degrees">26</h3>
+												<canvas height="32" width="32" id="cloudy"></canvas>
+												<h5>10 <i>km/h</i></h5>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- end of weather widget -->
+					</div>
+				</div>
+			</div>
 		</div>
-		<script src="/public/js/base/jq.1.8.2.js"></script>
-		<script src="/public/js/base/seajs.3.0.js" id="seajsnode"></script>
-		 <script type="text/javascript">
-            var vars = {
-				baseUrl: '<?=base_url()?>',
-				keditor:{ 
-					resizeType : 1,
-					allowPreviewEmoticons : false,
-					allowImageUpload : false,
-					items:[
-						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
-						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
-						'insertunorderedlist']
-				}
-			};
-        </script>
-		 <script type="text/javascript">
-            var version = 20160307;
-            var __cdn__ = 'http:://vm';
-            seajs.config({
-                base: __cdn__ + 'jsdev/{{env("APP_TAG", "pe")}}/',
-                map: [[/^(.*\jsdev\/.*\.(?:css|js))(?:.*)$/i, '$1?' + version]],
-                alias: {
-                    jqui: __cdn__ + 'js/jqui/jquery-ui.min.js',
-                    Msg: __cdn__ + 'jsdev/comm/Msg.js',
-                    M: __cdn__ + 'jsdev/comm/app.dialog.js',
-                    replaceVars: __cdn__ + 'jsdev/comm/fn.replaceVars.js',
-                    D: __cdn__ + 'jsdev/comm/app.Calendar.js',
-					$D: __cdn__ + 'jsdev/comm/app.Date.js',
-					K: __cdn__ + 'jsdev/plugins/keidtor/kindeditor-min.js',
-					chart:__cdn__ + 'js/Chart/Chart.min.js',
-					uCheck: __cdn__ + 'jsdev/comm/uCheck.js'
-                }
-            });
-            //检查开始时间小于结束时间
-				function check(){
-					var sdate = $('.pm_time').find('input[readonly]:eq(0)').val();
-					var edate = $('.pm_time').find('input[readonly]:eq(1)').val();
-					var begin=new Date(sdate.replace(/-/g,'/'));
-					var end=new Date(edate.replace(/-/g,'/'));
-					if(begin-end>0){
-					
-					 	$('.pm_time').find('input[readonly]:eq(1)').val("请选择正确的时间");
-					 }
-				}
-				// 结束
-            seajs.use(['common', 'app']);
-        </script>
-		<style>
-			.dialogBg{width:100%}
-			.dialogBody{overflow:hidden;}
-			.dialogBody,.dialogBody input{font-size:12px}
-			.dialogBody,.dialogBg{position:fixed;left:0;top:0;z-index:99;}
-			.dialogBody{left:50%;top:50%; border-radius: 5px;box-shadow: 0 1px 30px rgba(0,0,0,0.1);}
-			.dialogTitle{background:url(../../../static/skin/img/dialogTitle.jpg) repeat-x;}
-			.dialogTitle b{font-size:16px;text-align:left;display:block;height:49px;line-height:49px;color:#fff;padding-left:20px;}
-			.dialogTitle a{filter:alpha(opacity=70);opacity:1;background:url(../../../static/skin/img/ico_dialog_cls.png?1.001) no-repeat;width:15px;height:15px;cursor:pointer;display:inline;position:absolute;right:20px;top:17px;}
-			.dialogTitle a:hover{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-webkit-transform:rotate(90deg);transform:rotate(90deg)}
-			.dialogTitle a:active{filter:alpha(opacity=80);opacity: 0.8;}.dialogContent{  overflow-y: auto; max-height: 700px;}.dialogContents iframe{width:100%;border:0;overflow:hidden;overflow-y:auto}
-			.dialogButtons{text-align:center;margin: 40px 0 114px;}
-			table.dialogContents{width:auto;border:0}
-			table.dialogContents td{text-align:left;border:0}
-			.dialogButtons input{cursor:pointer;margin:0 10px;width:80px;height:41px;color:#fff;display:inline-block;background-color:#80c414;line-height:41px;text-align:center;font-size:14px;font-weight:bold;}
-			.dialogButtons input:hover{}
-			.dialogButtons input.dialog_y{color:#282d37; background:#f0f2f7}
-			.dialog_img{width:36px;padding:0}
-			.dialog_img p{width:32px;height:32px;margin:0 auto;background:url(../../../static/skin/img/ico_dialog.png?1.003) no-repeat}
-			p.dialog_img_confirm{background-position:0 3px}
-			p.dialog_img_alert{background-position:0 -272px}
-			p.dialog_img_tips{background-position:0 -380px}p.dialog_img_ok{background-position:0 -106px}
-			p.dialog_img_err{background-position:0 -52px}
-			.dialogText{margin:0}
-			.dialogText_ok{color:green}
-			.dialogText_err{}
-			.dialogText_loading{color:#666;font-size:14px;display:none;}
-			td.dialog_img_loading{width:40px}
-			td.dialog_img_loading p{width:100px;height:100px}
-			.dialog_img p.dialog_img_loading{background:url(../../../static/skin/img/loading.gif) no-repeat;color:#666;font-size:14px;opacity: 0.3;filter:alpha(opacity=30);}
-			.dialogAll b{font-weight:bold;margin:0}
-			.dialogText{font-size:18px;font-weight:bold;}
-			#dialogbtn1{ margin-left:20px}
-		</style>
-	</body>
+		<!-- /page content -->
+
+		<!-- footer content -->
+		<footer>
+			<div class="pull-right">
+				Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+			</div>
+			<div class="clearfix"></div>
+		</footer>
+		<!-- /footer content -->
+	</div>
+</div>
+
+<!-- jQuery -->
+<script src="/public/vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="/public/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="/public/vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="/public/vendors/nprogress/nprogress.js"></script>
+<!-- Chart.js -->
+<script src="/public/vendors/Chart.js/dist/Chart.min.js"></script>
+<!-- gauge.js -->
+<script src="/public/vendors/gauge.js/dist/gauge.min.js"></script>
+<!-- bootstrap-progressbar -->
+<script src="/public/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<!-- iCheck -->
+<script src="/public/vendors/iCheck/icheck.min.js"></script>
+<!-- Skycons -->
+<script src="/public/vendors/skycons/skycons.js"></script>
+<!-- Flot -->
+<script src="/public/vendors/Flot/jquery.flot.js"></script>
+<script src="/public/vendors/Flot/jquery.flot.pie.js"></script>
+<script src="/public/vendors/Flot/jquery.flot.time.js"></script>
+<script src="/public/vendors/Flot/jquery.flot.stack.js"></script>
+<script src="/public/vendors/Flot/jquery.flot.resize.js"></script>
+<!-- Flot plugins -->
+<script src="/public/js/flot/jquery.flot.orderBars.js"></script>
+<script src="/public/js/flot/date.js"></script>
+<script src="/public/js/flot/jquery.flot.spline.js"></script>
+<script src="/public/js/flot/curvedLines.js"></script>
+<!-- jVectorMap -->
+<script src="/public/js/maps/jquery-jvectormap-2.0.3.min.js"></script>
+<!-- bootstrap-daterangepicker -->
+<script src="/public/js/moment/moment.min.js"></script>
+<script src="/public/js/datepicker/daterangepicker.js"></script>
+
+<!-- Custom Theme Scripts -->
+<script src="/public/build/js/custom.min.js"></script>
+
+<!-- Flot -->
+<script>
+	$(document).ready(function() {
+		var data1 = [
+			[gd(2012, 1, 1), 17],
+			[gd(2012, 1, 2), 74],
+			[gd(2012, 1, 3), 6],
+			[gd(2012, 1, 4), 39],
+			[gd(2012, 1, 5), 20],
+			[gd(2012, 1, 6), 85],
+			[gd(2012, 1, 7), 7]
+		];
+
+		var data2 = [
+			[gd(2012, 1, 1), 82],
+			[gd(2012, 1, 2), 23],
+			[gd(2012, 1, 3), 66],
+			[gd(2012, 1, 4), 9],
+			[gd(2012, 1, 5), 119],
+			[gd(2012, 1, 6), 6],
+			[gd(2012, 1, 7), 9]
+		];
+		$("#canvas_dahs").length && $.plot($("#canvas_dahs"), [
+			data1, data2
+		], {
+			series: {
+				lines: {
+					show: false,
+					fill: true
+				},
+				splines: {
+					show: true,
+					tension: 0.4,
+					lineWidth: 1,
+					fill: 0.4
+				},
+				points: {
+					radius: 0,
+					show: true
+				},
+				shadowSize: 2
+			},
+			grid: {
+				verticalLines: true,
+				hoverable: true,
+				clickable: true,
+				tickColor: "#d5d5d5",
+				borderWidth: 1,
+				color: '#fff'
+			},
+			colors: ["rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)"],
+			xaxis: {
+				tickColor: "rgba(51, 51, 51, 0.06)",
+				mode: "time",
+				tickSize: [1, "day"],
+				//tickLength: 10,
+				axisLabel: "Date",
+				axisLabelUseCanvas: true,
+				axisLabelFontSizePixels: 12,
+				axisLabelFontFamily: 'Verdana, Arial',
+				axisLabelPadding: 10
+			},
+			yaxis: {
+				ticks: 8,
+				tickColor: "rgba(51, 51, 51, 0.06)",
+			},
+			tooltip: false
+		});
+
+		function gd(year, month, day) {
+			return new Date(year, month - 1, day).getTime();
+		}
+	});
+</script>
+<!-- /Flot -->
+
+<!-- jVectorMap -->
+<script src="/public/js/maps/jquery-jvectormap-world-mill-en.js"></script>
+<script src="/public/js/maps/jquery-jvectormap-us-aea-en.js"></script>
+<script src="/public/js/maps/gdp-data.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#world-map-gdp').vectorMap({
+			map: 'world_mill_en',
+			backgroundColor: 'transparent',
+			zoomOnScroll: false,
+			series: {
+				regions: [{
+					values: gdpData,
+					scale: ['#E6F2F0', '#149B7E'],
+					normalizeFunction: 'polynomial'
+				}]
+			},
+			onRegionTipShow: function(e, el, code) {
+				el.html(el.html() + ' (GDP - ' + gdpData[code] + ')');
+			}
+		});
+	});
+</script>
+<!-- /jVectorMap -->
+
+<!-- Skycons -->
+<script>
+	$(document).ready(function() {
+		var icons = new Skycons({
+				"color": "#73879C"
+			}),
+			list = [
+				"clear-day", "clear-night", "partly-cloudy-day",
+				"partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+				"fog"
+			],
+			i;
+
+		for (i = list.length; i--;)
+			icons.set(list[i], list[i]);
+
+		icons.play();
+	});
+</script>
+<!-- /Skycons -->
+
+<!-- Doughnut Chart -->
+<script>
+	$(document).ready(function(){
+		var options = {
+			legend: false,
+			responsive: false
+		};
+
+		new Chart(document.getElementById("canvas1"), {
+			type: 'doughnut',
+			tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+			data: {
+				labels: [
+					"Symbian",
+					"Blackberry",
+					"Other",
+					"Android",
+					"IOS"
+				],
+				datasets: [{
+					data: [15, 20, 30, 10, 30],
+					backgroundColor: [
+						"#BDC3C7",
+						"#9B59B6",
+						"#E74C3C",
+						"#26B99A",
+						"#3498DB"
+					],
+					hoverBackgroundColor: [
+						"#CFD4D8",
+						"#B370CF",
+						"#E95E4F",
+						"#36CAAB",
+						"#49A9EA"
+					]
+				}]
+			},
+			options: options
+		});
+	});
+</script>
+<!-- /Doughnut Chart -->
+
+<!-- bootstrap-daterangepicker -->
+<script>
+	$(document).ready(function() {
+
+		var cb = function(start, end, label) {
+			console.log(start.toISOString(), end.toISOString(), label);
+			$('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+		};
+
+		var optionSet1 = {
+			startDate: moment().subtract(29, 'days'),
+			endDate: moment(),
+			minDate: '01/01/2012',
+			maxDate: '12/31/2015',
+			dateLimit: {
+				days: 60
+			},
+			showDropdowns: true,
+			showWeekNumbers: true,
+			timePicker: false,
+			timePickerIncrement: 1,
+			timePicker12Hour: true,
+			ranges: {
+				'Today': [moment(), moment()],
+				'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+				'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+				'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+				'This Month': [moment().startOf('month'), moment().endOf('month')],
+				'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+			},
+			opens: 'left',
+			buttonClasses: ['btn btn-default'],
+			applyClass: 'btn-small btn-primary',
+			cancelClass: 'btn-small',
+			format: 'MM/DD/YYYY',
+			separator: ' to ',
+			locale: {
+				applyLabel: 'Submit',
+				cancelLabel: 'Clear',
+				fromLabel: 'From',
+				toLabel: 'To',
+				customRangeLabel: 'Custom',
+				daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+				monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+				firstDay: 1
+			}
+		};
+		$('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+		$('#reportrange').daterangepicker(optionSet1, cb);
+		$('#reportrange').on('show.daterangepicker', function() {
+			console.log("show event fired");
+		});
+		$('#reportrange').on('hide.daterangepicker', function() {
+			console.log("hide event fired");
+		});
+		$('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+			console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+		});
+		$('#reportrange').on('cancel.daterangepicker', function(ev, picker) {
+			console.log("cancel event fired");
+		});
+		$('#options1').click(function() {
+			$('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
+		});
+		$('#options2').click(function() {
+			$('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
+		});
+		$('#destroy').click(function() {
+			$('#reportrange').data('daterangepicker').remove();
+		});
+	});
+</script>
+<!-- /bootstrap-daterangepicker -->
+
+<!-- gauge.js -->
+<script>
+	var opts = {
+		lines: 12,
+		angle: 0,
+		lineWidth: 0.4,
+		pointer: {
+			length: 0.75,
+			strokeWidth: 0.042,
+			color: '#1D212A'
+		},
+		limitMax: 'false',
+		colorStart: '#1ABC9C',
+		colorStop: '#1ABC9C',
+		strokeColor: '#F0F3F3',
+		generateGradient: true
+	};
+	var target = document.getElementById('foo'),
+		gauge = new Gauge(target).setOptions(opts);
+
+	gauge.maxValue = 6000;
+	gauge.animationSpeed = 32;
+	gauge.set(3200);
+	gauge.setTextField(document.getElementById("gauge-text"));
+</script>
+<!-- /gauge.js -->
+</body>
 </html>

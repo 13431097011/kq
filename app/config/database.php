@@ -75,12 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => '192.168.56.104',
 	'username' => 'root',
 	'password' => '123456',
-	'database' => 'oa_kq',
+	'database' => 'cms',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => 'kq_',
+	'dbprefix' => 'b_',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,

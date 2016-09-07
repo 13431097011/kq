@@ -6,14 +6,15 @@
 													alt="<?php echo $v['title'];?>">
 						</a>
 						<p class="name">
-							<a id="ember472" href="<?php echo $v['url'];?>" class="ember-view">
+							<a id="ember472" href="<?php echo $v['url'];?>">
 								<?php echo $v['title'];?>
 							</a></p>
 						<p class="author"><span class="author_t"></span><?php echo $v['autor'];?></p>
 						<p class="price">
             <span class="rob">
                 <span class="sign">¥</span>
-                <span class="num_1"><?php echo $v['price'][0];?></span><span class="tail">.<?php echo $v['price'][1];?></span></span></div>
+                <span class="num_1"><?php echo $v['price'][0];?></span><span class="tail">.<?php echo $v['price'][1];?></span></span>
+              
 					</li>
 		<?php endforeach;?>	
 </ul>

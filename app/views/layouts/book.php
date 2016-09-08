@@ -5,8 +5,9 @@
 	<title>借书系统</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<link rel="stylesheet" type="text/css" href="/public/stylesheets/pb.css">
-	<link rel="stylesheet" type="text/css" href="/public/bootstrap/dist/css/bootstrap.min.css">
+
 	<link rel="stylesheet" type="text/css" href="/public/javascripts/jqui/jquery-ui.min.css">
 </head>
 <body>
@@ -191,7 +192,7 @@
 		<div class="mains cl">
 			<?php include_once __DIR__ . "/menu.php" ?>
 			<div class="right">
-			<?php echo $content; ?>
+				<?php echo $content; ?>
 			</div>
 		</div>
 	</div>

@@ -1,8 +1,8 @@
 /**
  * 开发版本的文件导入
  */
-(function (){
-    var paths  = [
+(function () {
+    var paths = [
             'editor.js',
             'core/browser.js',
             'core/utils.js',
@@ -66,8 +66,8 @@
             'adapter/source.js',
             'adapter/combobox.js'
         ],
-        baseURL = '../_src/';
-    for (var i=0,pi;pi = paths[i++];) {
-        document.write('<script type="text/javascript" src="'+ baseURL + pi +'"></script>');
+        baseURL = '/public/umeditor-dev/_src/';
+    for (var i = 0, pi; pi = paths[i++];) {
+        document.write('<script type="text/javascript" src="' + baseURL + pi + '"></script>');
     }
 })();

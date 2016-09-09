@@ -7,8 +7,12 @@ class Book extends MY_Controller
 	{
 		$this->display('Book/form');
 	}
-	public function getISBN(){
-		$url = 'https://api.douban.com/v2/book/isbn/';
+
+	public function getISBN()
+	{
+		$isbn = $this->input->post('isbn');
+		$url = 'https://api.douban.com/v2/book/isbn/' . $isbn;
+		cget($url);
 	}
-	
+
 }

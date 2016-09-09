@@ -54,10 +54,24 @@ function uuid()
 	}
 }
 
-function UI($name,$data){
-	$filename = dirname(dirname(__FILE__))."/UI/".$name.".php";
+function UI($name, $data)
+{
+	$filename = dirname(dirname(__FILE__)) . "/UI/" . $name . ".php";
 	include $filename;
 	$obj = new lists(CI_Controller::get_instance());
 	return $obj->index($data);
+}
+
+function cget($url)
+{
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_HEADER, 0);
+	//执行并获取HTML文档内容
+	$output = curl_exec($ch);
+	//释放curl句柄
+	curl_close($ch);
+	return json_decode($output, true);
 }
 

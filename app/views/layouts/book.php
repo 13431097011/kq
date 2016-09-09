@@ -5,7 +5,7 @@
 	<title>借书系统</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<script src="/public/jquery/dist/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="/public/stylesheets/pb.css">
 
 	<link rel="stylesheet" type="text/css" href="/public/javascripts/jqui/jquery-ui.min.css">

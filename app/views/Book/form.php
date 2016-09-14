@@ -3,6 +3,9 @@
 <script type="text/javascript" charset="utf-8" src="/public/umeditor-dev/umeditor.config.js"></script>
 <script type="text/javascript" charset="utf-8" src="/public/umeditor-dev/_examples/editor_api.js"></script>
 <script type="text/javascript" src="/public/umeditor-dev/lang/zh-cn/zh-cn.js"></script>
+<link rel="stylesheet" type="text/css" href="/public/tagsinput/jquery.tagsinput.css">
+<script type="text/javascript" src="/public/tagsinput/jquery.tagsinput.min.js"></script>
+
 <form role="form">
 
 	<div class="form-group">
@@ -20,28 +23,32 @@
 	</div>
 	<div class="form-group">
 		<label for="exampleInputFile">作者</label>
-		<input type="text" class="form-control" name="book[subtitle]" placeholder="请输入书的作者">
+		<input type="text" class="form-control" name="book[author]" id="author" placeholder="请输入书的作者">
 	</div>
 	<div class="form-group">
 		<label for="exampleInputFile">出版商</label>
-		<input type="text" class="form-control" name="book[publisher]" placeholder="请输入书的出版商">
+		<input type="text" class="form-control" name="book[publisher]" id="publisher" placeholder="请输入书的出版商">
 	</div>
 	<div class="form-group">
 		<label for="exampleInputFile">目录</label>
 		<script type="text/plain" id="catalog" style="width:800px;height:240px;"></script>
 	</div>
+	<input type="hidden" name="book[image]" id="image" value="">
+</form>
+<iframe name="upload_hidden_files" id="upload_hidden_files" style="display:none"></iframe>
+<form method="post" action="/Book/uploadpic" id='exportForm' target="upload_hidden_files">
 	<div class="form-group">
 		<label for="exampleInputFile">缩略图</label>
 		<input type="file" id="exampleInputFile">
 		<p class="help-block">支持jpg/png格式图片</p>
+		<p class="help-block">
+			<img src="" alt="" id="imagelist">
+		</p>
 	</div>
-	<div class="checkbox">
-		<label>
-			<input type="checkbox"> Check me out
-		</label>
-	</div>
-	<button type="submit" class="btn btn-default">Submit</button>
 </form>
+<div class="form-group">
+	<button type="button" class="btn btn-primary">提交</button>
+</div>
 <script type="text/javascript">
 	window.UMEDITOR_HOME_URL = "/public/";
 	var um = UM.getEditor('catalog', {
@@ -60,7 +67,41 @@
 		//更多其他参数，请参考umeditor.config.js中的配置项
 	});
 	$("#isbn").click(function () {
-		if()
+		var val = $("input[name='book[isbn]']").val();
+		val = $.trim(val);
+		if (val == "") {
+			M.tipsErr("请输入ISBN");
+			return false;
+		}
+		$.post('/Book/getISBN', {isbn: val}, function (data) {
+			if (data.err != '') {
+				M.tipsErr(data.err);
+				return false
+			}
+			var d = data.data;
+			var fields = ['title', 'author', 'publisher', 'catalog', 'image'];
+			if (typeof d.code != 'undefined' && d.code == 6000) {
+				M.tipsErr("查无此书");
+				return false;
+			} else {
+				d.author = d.author.join('、');
+				d.catalog = d.catalog.replace(/\r\n/g, "<br>");
+				d.catalog = d.catalog.replace(/\n/g, "<br>");
+				for (var i = 0; i < fields.length; i++) {
+					var k = fields[i];
+					if (k == 'catalog') {
+						um.setContent(d[k]);
+					} else if (k == 'image') {
+						$("#" + k).val(d[k]);
+						$("#imagelist").attr('src', d[k]);
+					} else {
+						$('#' + k).val(d[k]);
+					}
+
+
+				}
+			}
+		}, 'json');
 	});
 
 </script>

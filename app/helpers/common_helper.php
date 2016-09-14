@@ -70,6 +70,7 @@ function cget($url)
 	curl_setopt($ch, CURLOPT_HEADER, 0);
 	//执行并获取HTML文档内容
 	$output = curl_exec($ch);
+
 	//释放curl句柄
 	curl_close($ch);
 	return json_decode($output, true);

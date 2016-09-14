@@ -204,3 +204,15 @@
 </div>
 </body>
 </html>
+<script src="/public/javascripts/seajs.3.0.js" id="seajsnode"></script>
+<script type="text/javascript">
+	var version = 201605061;
+	var __cdn__ = '/public/';
+	seajs.config({
+		alias: {
+			M: '/public/javascripts/comm/app.dialog.js',
+			D: '/public/javascripts/comm/app.Calendar.js',
+		}
+	});
+	seajs.use('common');
+</script>

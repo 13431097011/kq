@@ -10,9 +10,15 @@ class Book extends MY_Controller
 
 	public function getISBN()
 	{
+
 		$isbn = $this->input->post('isbn');
 		$url = 'https://api.douban.com/v2/book/isbn/' . $isbn;
-		cget($url);
+		//$url = " http://www.baidu.com";
+		$webinfo = cget($url);
+		if (!$webinfo) {
+			return callback('网络异常请手动输入');
+		}
+		return json(['err' => '', 'data' => $webinfo]);
 	}
 
 }
